@@ -1,0 +1,5 @@
+http://contextes.io/publications/api-routes
+
+http://contextes.io/publications/sessions
+http://contextes.io/publications/chapitres
+http://contextes.io/publications/documents

@@ -1,0 +1,129 @@
+ <section id="cover">
+        <h1>Printing in&nbsp;Relation to&nbsp;Graphic&nbsp;Art</h1>
+        <h2 id="author">George French</h2>
+        <p id="booktitle">Printing in&nbsp;Relation to&nbsp;Graphic&nbsp;Art</p>
+    </section>
+
+    <section id="copyright">
+        <p>Made with paged.js</p>
+        <p>Source: Project Gutenberg</p>
+    </section>
+
+    <section id="halftitle">
+        <hgroup>
+        
+            <h1>Printing in&nbsp;Relation to&nbsp;Graphic&nbsp;Art</h1>
+            <h2>George French</h2>
+        </hgroup>
+
+        <p class="printer">
+            Cleveland
+            <br /> The Imperial Press
+            <br /> 1903
+        </p>
+    </section>
+
+    <section id="toc">
+        <h1>Table of content</h1>
+        <ul>
+            <li id="toc-prefatory-note"><a href="#prefatory-note">Prefatory Note</a></li>
+            <li id="toc-introduction"><a href="#introduction">Introduction</a></li>
+            <li class="chap"><a href="#art-in-printing">Art in Printing</a></li>
+        </ul>
+    </section>
+
+    <section id="prefatory-note">
+
+        <h1 id="pref">Prefatory Note</h1>
+        <p>It is not the purpose of this book to try to establish a claim for printing that it is an art. It is hoped
+            that it may show that the principles of art may be applied to printing, and that such application may lead
+            to improvement in some essentials of printing.</p>
+        <p>Thanks are due to several experts in printing who have read the proofs, and have given wise and acceptable
+            counsel.</p>
+        <p>I desire to acknowledge that aid has been freely sought from books upon art, and that in some instances forms
+            of expression have been adopted from them. No originality is claimed for the allusions to art, nor for art
+            terms and formulas employed.</p>
+        <p class="date">September, 1903.</p>
+
+    </section>
+
+    <section id="introduction">
+        <h1>Introduction</h1>
+        <p>
+            <span class="smcap">Because</span> it is difficult to perfectly transfer a thought from one mind to another
+            it is essential that the
+            principal medium through which such transference is accomplished may be as perfect as it is possible to make
+            it.</p>
+
+    </section>
+
+    <section id="art-in-printing" class="chapter" data-chapter="1">
+
+        <h1>Art in Printing</h1>
+
+        <p><span class="smcap">There</span> is this vital difference between other objects of art and printing: That our
+            association with them is
+            purely voluntary, and that printing forces itself upon us at all times and in every relation of life. It is
+            impossible
+            for a person of intelligence to remove himself from the influence of printing. It confronts him at every
+            turn, and
+            in every relation of life it plays an important and insistent part.</p>
+
+        <p>Such examples of art as a painting or a piece of statuary exert a certain influence upon a restricted number
+            of persons;
+            and it is at all times optional with all persons whether they submit themselves to the influence of such art
+            objects.
+            We are able to evade the influence of other forms of art, but we are not able to ward off printing. To it we
+            must
+            submit. It is constantly before our eyes; it is forever exerting its power upon our consciousness. It is
+            quite possible
+            that we may not at present be able to refer any quality of mind, or any degree of
+            cultivation, directly to printing, in any form it may have been presented to us; but it is easily
+            conceivable that printing
+            has a certain influence upon our esthetic life which has been so constant and so habitual as to have escaped
+            definite
+            recognition.
+        </p>
+    </section>
+
+    <section id="pictorial-composition" class="chapter" data-chapter="2">
+
+        <h1>Pictorial Composition</h1>
+
+        <p>
+            <span class="smcap">While</span> too much science is often deadly to art, the true basis of pictorial
+            composition is rigidly scientific,
+            and all of the principles governing it are of use and importance to the printer, especially in planning
+            displayed
+            work and in title pages.</p>
+
+        <p>Composition is that quality which gives a picture coherence, "the mortar of the wall." It was not esteemed of
+            importance
+            by the old masters, and many of their works do not show that they knew or cared for that which distinguishes
+            a picture
+            from a map, a group photograph, or a scientific diagram. It is the absence of composition, balance, unity,
+            that makes
+            ordinary photographs something other than true works of art. It is not primarily truth of representation
+            that is
+            necessary in a work of art, but truth of idealization; and that quality is beyond the conscious reach of the
+            camera's
+            lens. It is a redeeming and a justifying element added by the imagination of the artist. There may be a
+            picture, by a photographer or by a painter, having all the requisite component parts to make it a work of
+            art; there
+            may be, for example, a woman, an axe, a road, a mountain, trees; but these thrown together upon a canvas do
+            not make
+            a work of art unless they are properly composed, even if they are arranged in an order satisfying to the
+            realist,
+            and each faultlessly executed. It is not the same thing to paint and to make pictures; to print and to
+            execute artistic
+            printing.</p>
+    </section>
+
+
+    <section id="colophon">
+        <h1>Colophon</h1>
+
+        <h2>Made with paged.js</h2>
+        <p><a href="https://gitlab.pagedmedia.org/samples/printing-in-relation-to-graphic-art">gitlab.pagedmedia.org/samples/printing-in-relation-to-graphic-art</a></p>
+
+    </section>

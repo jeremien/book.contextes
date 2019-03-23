@@ -3,3 +3,7 @@ http://contextes.io/publications/api-routes
 http://contextes.io/publications/sessions
 http://contextes.io/publications/chapitres
 http://contextes.io/publications/documents
+
+
+- commande api rest 
+curl -d '{ "session" : "testdede" }' -H "Content-Type: application/json" -X POST http://localhost:3000/methods/documents.get.documents

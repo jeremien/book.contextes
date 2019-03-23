@@ -1,62 +1,29 @@
 
 const axios = require('axios');
 const { writeFile } = require('./utils/writeHtml');
+const { makeCover, makeCopyright, makeHalftitle, makeChapitres, makeColophon } = require('./utils/makeHtml');
 
-async function getContextes() {
+async function getContextes( titreSession = 'test' ) {
 
     try {
 
-        const contextesSessions = axios('http://contextes.io/publications/sessions');
-        const contextesDocuments = axios('http://contextes.io/publications/documents');
+        const contextesDocuments = axios.post('http://contextes.io/methods/documents.get.documents', { session : titreSession });
 
-        const [ sessions, documents ] = await Promise.all( [contextesSessions, contextesDocuments] );
-        // console.log(sessions.data.sessions[0].titre) 
-        // console.log(documents.data.documents) 
+        const [ documents ] = await Promise.all( [contextesDocuments] );
 
-        let cover = `<section id="cover">
-        <h1>${sessions.data.sessions[0].titre}</h1>
-        <h2 id="author">${sessions.data.sessions[0].auteur}</h2>
-        <p id="booktitle">${sessions.data.sessions[0].titre}</p>
-        </section>`
+        const { _id, chapitres, ...session } = documents.data[0];
 
-        let copyright = `<section id="copyright">
-            <p>Made with paged.js</p>
-            <p>Source: Project Gutenberg</p>
-            </section>
-        `
-
-        let halftitle = `<section id="halftitle">
-            <hgroup>
-            <h1>${sessions.data.sessions[0].titre}</h1>
-            <h2>${sessions.data.sessions[0].auteur}</h2>
-            </hgroup>
-            <p class="printer">
-                Cleveland
-            <br /> The Imperial Press
-            <br /> 1903
-            </p>
-            </section>`
-
-        let chapitre = `<section id="titre-chapitre" class="chapter" data-chapter="1"><h1>titre chapitre 1</h1>`;
-
-        if (documents.data.documents) {
-            documents.data.documents.forEach((item) => {
-                chapitre += "<p>" + item.contenu + "</p>";
-            });
-        }
-        
-        chapitre += "</section>";
-
-        let colophon = ` <section id="colophon">
-            <h1>Colophon</h1>
-            <h2>Made with paged.js</h2>
-            </section>`
-
+        const cover = makeCover(session);
+        const copyright = makeCopyright(session);
+        const halftitle = makeHalftitle(session);
+        const chapitres_html = makeChapitres(chapitres);
+        const colophon = makeColophon(session);
+       
         return {
             cover : cover,
             copyright : copyright,
             halftitle : halftitle,
-            section : chapitre,
+            section : chapitres_html,
             colophon : colophon
         };
 
@@ -71,7 +38,7 @@ async function getContextes() {
 
     try {
 
-        const body = await getContextes();
+        const body = await getContextes('test');
 
         const html = `
             <!DOCTYPE html>

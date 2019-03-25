@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "book" : "nodemon app.js",
-    "devbook" : "node app.js && webpack-dev-server --mode development --open"
+    "book": "nodemon app.js",
+    "devbook": "node app.js && webpack-dev-server --mode development --open"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "clean-webpack-plugin": "^2.0.1",
+    "markdown-it": "^8.4.2",
     "webpack-md5-hash": "^0.0.6"
   },
   "devDependencies": {

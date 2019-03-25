@@ -1,3 +1,6 @@
+const MarkdownIt = require('markdown-it');
+
+md = new MarkdownIt();
 
 const makeCover = (data) => {
 
@@ -28,7 +31,7 @@ const makeHalftitle = (data) => {
             <h2>${data.auteur}</h2>
             </hgroup>
             <p class="printer">
-                Cleveland
+                ${data.localisation}
             <br /> The Imperial Press
             <br /> 1903
             </p>
@@ -51,9 +54,11 @@ const makeChapitres = (data) => {
         if (documents.length !== 0) {
             documents.forEach( (element) => {
                 if (element.image) {
-                    chapitre += `<p><img src="${element.image}" /><br>${element.contenu}</p>`;
+                    let html = md.render(element.contenu);
+                    chapitre += `<p><img src="${element.image}" /><br>${html}</p>`;
                 } else {
-                    chapitre += `<p>${element.contenu}</p>`;
+                    let html = md.render(element.contenu);
+                    chapitre += `<p>${html}</p>`;
                 }
             });
         }

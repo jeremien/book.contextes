@@ -59,8 +59,16 @@ const ParseTexte = (data, dest) => {
             `
 
             item.documents.forEach((item) => {
-
+                let regex = /(https?:\/\/[^\s)]+)/g;
                 if (!item.image) {
+                    if (item.contenu.match(regex)) {
+                        chapitres += `
+                        ${item.contenu}
+                        `;
+                        downloadImage(item.contenu.match(regex)[0], dest)
+                        .then((result) => console.log('download', item.image))
+                        .catch((error) => console.log('error', item.image, 'status', error.response.status));                                               
+                    }
                     chapitres += `
                     ${item.contenu}
                     `;

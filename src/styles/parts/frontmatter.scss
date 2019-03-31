@@ -15,7 +15,7 @@
     }
 
     @page frontmatter {
-        background-color: #f8f2ec;
+        // background-color: #f8f2ec;
     }
 
     @page frontmatter:first{
@@ -26,12 +26,12 @@
 
     /* don't work for now */
     @page frontmatter:blank {
-        background-color: #f8f2ec;
+        // background-color: #f8f2ec;
     }
 
     /* Hack to have blank page of named page */
     .pagedjs_frontmatter_page + .pagedjs_blank_page {
-        background-color: #f8f2ec;
+        // background-color: #f8f2ec;
     }
 
 
@@ -72,7 +72,7 @@
 
     #prefatory-note .date{
         text-align: right;
-        font-style: italic;
+        // font-style: italic;
         margin-top: var(--baseline);
     }
 
@@ -81,9 +81,9 @@
 
     #copyright p{
         text-indent: 0;
-        font-family: 'hk-grotesk';
+        font-family: sans-serif;
         font-weight: 500;
-        font-style: italic;
+        // font-style: italic;
         font-size: 0.7rem;
         line-height: calc(var(--baseline)*1);
         text-indent: 0;
@@ -95,7 +95,7 @@
 
     #halftitle h1, 
     #halftitle h2{
-        font-family: 'permian';
+        font-family: sans-serif;
         font-weight: normal;
         text-indent: 0;
         text-align: left;
@@ -104,7 +104,7 @@
     #halftitle h1{
         font-size: 2rem;
         line-height: calc(var(--baseline)*1.5);
-        text-transform: uppercase;
+        // text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: calc(var(--baseline)*3);
         padding-top: 10px; /* set on baseline */
@@ -118,12 +118,12 @@
     }
 
     #halftitle .printer{
-        font-family: 'hk-grotesk';
+        font-family: sans-serif;
         font-weight: 500;
         line-height: calc(var(--baseline)*1);
         text-indent: 0;
-        border-left: 1px solid black;
+        // border-left: 1px solid black;
         padding-top: calc(var(--baseline)*0.25);
         padding-bottom: calc(var(--baseline)*0.25);
-        padding-left: calc(var(--baseline)*0.5);
+        // padding-left: calc(var(--baseline)*0.5);
     }

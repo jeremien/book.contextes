@@ -22,8 +22,8 @@ a{ color: currentColor; text-decoration: none; }
 #toc h1,
 #colophon h1{
     font-family: sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
+    // font-weight: bold;
+    // text-transform: uppercase;
     font-size: 1rem;
     line-height: var(--baseline);
     margin-bottom: 12px;
@@ -42,7 +42,7 @@ a{ color: currentColor; text-decoration: none; }
 body { counter-reset: chapter; }
 .chapter h1 { counter-increment: chapter; }
 .chapter h1::before { 
-  content: counter(chapter, lower-roman);
+  content: counter(chapter, decimal);
   font-weight: normal;
 }
 
@@ -59,12 +59,13 @@ p, li{
 }
 
 p{
-    text-indent: 1rem;
-    text-align: justify;
+    // text-indent: 1rem;
+    text-align: left;
 }
 
 img {
     width: 300px;
+    padding: 2rem;
 }
 
 

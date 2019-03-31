@@ -21,9 +21,9 @@ figure img {
 figure figcaption{ 
     width: 100%;
     display: block;
-    font-family: 'hk-grotesk';
+    font-family: sans-serif;
     font-weight: 500;
-    font-style: italic;
+    // font-style: italic;
     font-size: 0.7rem;
     line-height: calc(var(--baseline)*0.5);
     text-indent: 0;

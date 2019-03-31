@@ -13,7 +13,7 @@
 }
 
 #toc li::after{
-    content: ".................................................................................................................................................";
+    content: "                                    ";
     float: left;
     width: 0;
     padding-left: 5px;
@@ -24,7 +24,7 @@
 #toc li a::after{
     position: absolute;
     right: 0;
-    background-color: #f8f2ec;
+    // background-color: #f8f2ec;
     padding-left: 6px;
 }
 
@@ -38,7 +38,7 @@
 #toc { counter-reset: numtoc; }
 #toc .chap { counter-increment: numtoc; }
 #toc .chap::before { 
-    content: counter(numtoc, upper-roman) ". "; 
+    content: counter(numtoc, decimal) ". "; 
     padding-right: 5px;
     /* display: inline-block;
     width: 45px; */

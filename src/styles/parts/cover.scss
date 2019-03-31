@@ -2,10 +2,10 @@
 /* layout -------------------------------------------------------------------------- */
 
 @page :first {
-    background-color: red;
+    // background-color: blue;
     margin-top: 18mm;
     margin-bottom: 18mm;
-    color: white;
+    color: black;
     @top-right-corner { content: none; }
     @top-right{ content: none; }
 }
@@ -36,9 +36,9 @@
 
 #cover h1, 
 #author{
-    font-family: 'permian';
+    font-family: sans-serif;
     font-weight: normal;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     letter-spacing: 2px;
     text-indent: 0;  
     text-align: left;

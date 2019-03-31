@@ -11,6 +11,8 @@ async function getContextes( titreSession = 'test' ) {
 
         const [ documents ] = await Promise.all( [contextesDocuments] );
 
+        // console.log(documents.data[0])
+
         const { _id, chapitres, ...session } = documents.data[0];
 
         const cover = makeCover(session);
@@ -42,7 +44,7 @@ async function getContextes( titreSession = 'test' ) {
 
     try {
 
-        const body = await getContextes('test');
+        const body = await getContextes('supra');
 
         const html = `
             <!DOCTYPE html>

@@ -1,0 +1,46 @@
+
+        --------------------------------------------
+        session : test
+        auteur : jeremieee
+        description : La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+        localisation : venus
+        editeur : interplanetary
+        date : 31/03/2019
+        --------------------------------------------
+        
+            --------------------------------------------------
+            chapitre : test
+            auteur : jeremie
+            description : La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+            --------------------------------------------------
+            
+                    deded
+                    
+                    La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+                    
+                    La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+                    
+                    La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+                    
+                    http://localhost:3000/cdn/storage/images/BCWQ9mvPrabYyETYj/original/BCWQ9mvPrabYyETYj.jpg
+                    rachel
+                    
+            --------------------------------------------------
+            chapitre : cool
+            auteur : jeremie
+            description : La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+            --------------------------------------------------
+            
+                    dede
+                    
+                    La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+                    
+                    La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+                    
+                    La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+                    
+                    La foule s’est massée devant une jolie maison, dans le quartier bobo d’Islington, dans le nord de Londres. Perchés sur des escabeaux, les reporters brandissent leurs caméras. Au premier rang, s’alignent les journalistes vedettes des trois principales chaînes de télévision nationales. Ce dimanche 21 février 2016, tous les médias du pays paraissent concentrés sur cette élégante porte noire. La veille, après ses trente heures de négociations à Bruxelles, le premier ministre conservateur, David Cameron (DC), a lancé officiellement la campagne pour le référendum sur l’Europe, programmé le 23 juin, et le moins que l’on puisse dire est que les choses ont mal démarré…
+                    
+                    http://localhost:3000/cdn/storage/images/No3H23hPvzQYERey9/original/No3H23hPvzQYERey9.jpg
+                    2001
+                    

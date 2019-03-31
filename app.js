@@ -1,7 +1,7 @@
 
 const axios = require('axios');
-const { writeFile } = require('./utils/writeHtml');
-const { makeCover, makeCopyright, makeHalftitle, makeChapitres, makeColophon } = require('./utils/makeHtml');
+const { writeFile } = require('./utils/writeData');
+const { makeCover, makeCopyright, makeHalftitle, makeTOC, makeIntroduction, makeChapitres, makeColophon } = require('./utils/makeHtml');
 
 async function getContextes( titreSession = 'test' ) {
 
@@ -16,6 +16,8 @@ async function getContextes( titreSession = 'test' ) {
         const cover = makeCover(session);
         const copyright = makeCopyright(session);
         const halftitle = makeHalftitle(session);
+        const toc = makeTOC(session, chapitres);
+        const introduction = makeIntroduction(session);
         const chapitres_html = makeChapitres(chapitres);
         const colophon = makeColophon(session);
        
@@ -23,6 +25,8 @@ async function getContextes( titreSession = 'test' ) {
             cover : cover,
             copyright : copyright,
             halftitle : halftitle,
+            toc : toc,
+            introduction : introduction,
             section : chapitres_html,
             colophon : colophon
         };
@@ -56,6 +60,8 @@ async function getContextes( titreSession = 'test' ) {
             ${body.cover}
             ${body.copyright}
             ${body.halftitle}
+            ${body.toc}
+            ${body.introduction}
             ${body.section}
             ${body.colophon}
             </body>

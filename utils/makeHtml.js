@@ -41,6 +41,34 @@ const makeHalftitle = (data) => {
 
 }
 
+const makeTOC = (session, chapitres) => {
+
+    let toc =  `<section id="toc">
+                <h1>Table of content</h1>
+                    <ul>
+                        <li id="toc-introduction"><a href="#introduction">Introduction</a></li>
+                        <li class="chap"><a href="#art-in-printing">Art in Printing</a></li>
+                    </ul>
+                </section>`
+
+    return toc;
+
+}
+
+const makeIntroduction = (session) => {
+
+    let intro = `<section id="introduction">
+                    <h1>Introduction</h1>
+                    <p>
+                    <span class="smcap">Because</span> it is difficult to perfectly transfer a thought from one mind to another
+                    it is essential that the
+                    principal medium through which such transference is accomplished may be as perfect as it is possible to make
+                    it.</p>
+                </section>`
+
+    return intro;
+}
+
 const makeChapitres = (data) => {
 
     let html = [];
@@ -86,6 +114,8 @@ module.exports = {
     makeCover,
     makeCopyright,
     makeHalftitle,
+    makeTOC,
+    makeIntroduction,
     makeChapitres,
     makeColophon
 }

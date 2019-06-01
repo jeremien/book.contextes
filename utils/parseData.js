@@ -9,8 +9,17 @@ async function downloadImage(url, dest) {
     let index = url.lastIndexOf("/");
     let fileName = url.substr(index);
     fileName = fileName.substr(1);
+    let images_root = `${dest}/images`;
 
-    const path = Path.resolve(__dirname, dest, fileName);
+    try {
+        if (!fs.existsSync(images_root)) {
+            fs.mkdirSync(images_root)
+        }
+    } catch (err) {
+        console.error(err);
+    }
+
+    const path = Path.resolve(__dirname, images_root, fileName);
     console.log(path)
     const writer = fs.createWriteStream(path);
     const response = await axios({
@@ -60,28 +69,46 @@ const ParseTexte = (data, dest) => {
             `
 
             item.documents.forEach((item) => {
-                let regex = /(https?:\/\/[^\s)]+)/g;
-                if (!item.image) {
-                    if (item.contenu.match(regex)) {
+                let regex = /(https?:\/\/[^\s)]+)(.jpg|.png)/g;
+                try {
+
+                    if (!item.image) {
+                        
+                        try {
+                            if (item.contenu.match(regex)) {
+                                chapitres += `
+                                ${item.contenu}
+                                `;
+                                
+                                let image_url = item.contenu.match(regex)[0];
+
+                                downloadImage(item.contenu.match(regex)[0], dest)
+                                .then((result) => console.log('download', image_url))
+                                .catch((error) => console.log('error', image_url, 'status', error.response.status));                                               
+                            }
+                        } catch (err) {
+                            console.error(err);
+                        }
+
                         chapitres += `
                         ${item.contenu}
                         `;
-                        // downloadImage(item.contenu.match(regex)[0], dest)
-                        // .then((result) => console.log('download', item.image))
-                        // .catch((error) => console.log('error', item.image, 'status', error.response.status));                                               
+
+                    } else {
+
+                        chapitres += `
+                        ${item.image}
+                        ${item.contenu}
+                        `;
+
+                        downloadImage(item.image, dest)
+                            .then(result => console.log('download', item.image))
+                            .catch(error => console.log('error', item.image, 'status', error.response.status));
                     }
-                    chapitres += `
-                    ${item.contenu}
-                    `;
-                } else {
-                    chapitres += `
-                    ${item.image}
-                    ${item.contenu}
-                    `;
-                    // downloadImage(item.image, dest)
-                    //     .then((result) => console.log('download', item.image))
-                    //     .catch((error) => console.log('error', item.image, 'status', error.response.status));
+                } catch(err) {
+                    console.error(err);
                 }
+               
                
             });
         });

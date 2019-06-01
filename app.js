@@ -3,7 +3,7 @@ const axios = require('axios');
 const { writeFile } = require('./utils/writeData');
 const { makeCover, makeCopyright, makeHalftitle, makeTOC, makeIntroduction, makeChapitres, makeColophon } = require('./utils/makeHtml');
 
-async function getContextes( titreSession = 'test' ) {
+async function getContextes( titreSession = '' ) {
 
     try {
 
@@ -40,11 +40,11 @@ async function getContextes( titreSession = 'test' ) {
 
 }
 
-(async () => {
+async function main(titre) {
 
     try {
 
-        const body = await getContextes('supra');
+        const body = await getContextes(titre);
 
         const html = `
             <!DOCTYPE html>
@@ -77,4 +77,7 @@ async function getContextes( titreSession = 'test' ) {
     
     }
 
-})();
+};
+
+const args = process.argv.slice(2);
+main(args[0]);

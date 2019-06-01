@@ -16,6 +16,8 @@ const makeCover = (data) => {
 const makeCopyright = (data) => {
 
     let copyright = `<section id="copyright">
+                <a href="https://www.pagedmedia.org/">Made with paged.js</a> 
+                and <a href="http://contextes.io">Contextes</a>
             </section>
         `;
     return copyright;
@@ -97,10 +99,10 @@ const makeChapitres = (data) => {
             documents.forEach( (element) => {
                 if (element.image) {
                     let html = md.render(element.contenu);
-                    chapitre += `<p><img src="${element.image}" /><br>${html}</p>`;
+                    chapitre += `<img src="${element.image}" /><br>${html}`;
                 } else {
                     let html = md.render(element.contenu);
-                    chapitre += `<p>${html}</p>`;
+                    chapitre += `${html}`;
                 }
             });
         }

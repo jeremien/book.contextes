@@ -1,6 +1,5 @@
 const axios = require('axios');
 const fs = require('fs');
-const moment = require('moment');
 
 const { writeFile } = require('./utils/writeData');
 const { ParseTexte } = require('./utils/parseData');
@@ -48,5 +47,4 @@ async function main (titreSession) {
 };
 
 const args = process.argv.slice(2);
-
 main(args[0]);

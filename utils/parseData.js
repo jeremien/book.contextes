@@ -11,6 +11,7 @@ async function downloadImage(url, dest) {
     fileName = fileName.substr(1);
 
     const path = Path.resolve(__dirname, dest, fileName);
+    console.log(path)
     const writer = fs.createWriteStream(path);
     const response = await axios({
         url,
@@ -65,9 +66,9 @@ const ParseTexte = (data, dest) => {
                         chapitres += `
                         ${item.contenu}
                         `;
-                        downloadImage(item.contenu.match(regex)[0], dest)
-                        .then((result) => console.log('download', item.image))
-                        .catch((error) => console.log('error', item.image, 'status', error.response.status));                                               
+                        // downloadImage(item.contenu.match(regex)[0], dest)
+                        // .then((result) => console.log('download', item.image))
+                        // .catch((error) => console.log('error', item.image, 'status', error.response.status));                                               
                     }
                     chapitres += `
                     ${item.contenu}
@@ -77,9 +78,9 @@ const ParseTexte = (data, dest) => {
                     ${item.image}
                     ${item.contenu}
                     `;
-                    downloadImage(item.image, dest)
-                        .then((result) => console.log('download', item.image))
-                        .catch((error) => console.log('error', item.image, 'status', error.response.status));
+                    // downloadImage(item.image, dest)
+                    //     .then((result) => console.log('download', item.image))
+                    //     .catch((error) => console.log('error', item.image, 'status', error.response.status));
                 }
                
             });

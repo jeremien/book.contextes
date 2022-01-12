@@ -14,7 +14,7 @@
     "clean-webpack-plugin": "^2.0.1",
     "express": "^4.16.4",
     "image-downloader": "^3.4.2",
-    "markdown-it": "^8.4.2",
+    "markdown-it": "^12.3.2",
     "moment": "^2.24.0",
     "webpack-md5-hash": "^0.0.6"
   },
